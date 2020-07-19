@@ -136,6 +136,13 @@ Exposição da marca, endereço e redes sociais com links reais.
 #### 2.2) Pages:
 Home e Reports, conforme explicado no header da aplicação.
 
+#### 2.2) Instalação da aplicação:
+
+Você precisa ter o npm e o yarn para instalar o node_modules. Após isto, basta executar o comando no diretório root:
+```
+yarn start
+```
+
 ## :computer: Tecnologias empregadas:
 
 Front-end:
