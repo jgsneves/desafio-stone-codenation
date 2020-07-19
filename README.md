@@ -127,7 +127,7 @@ display: flex;
 ```
 
 <h1 align=center>
-<img width="400" src="https://github.com/jgsneves/desafioStoneCodenation/blob/master/2020-07-19-19-54-30.gif" />
+<img width="500" src="https://github.com/jgsneves/desafioStoneCodenation/blob/master/2020-07-19-19-54-30.gif" />
 </h1>
 
 #### 2.1) Componentes:
