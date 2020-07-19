@@ -146,21 +146,21 @@ Front-end:
 - [TypeScript](https://www.typescriptlang.org/);
 
 Back-end:
--asgiref==3.2.10
--astroid==2.4.2
--colorama==0.4.3
--Django==3.0.8
--django-cors-headers==3.4.0
--djangorestframework==3.11.0
--isort==4.3.21
--lazy-object-proxy==1.4.3
--mccabe==0.6.1
--pylint==2.5.3
--pylint-django==2.1.0
--pylint-plugin-utils==0.6
--pytz==2020.1
--six==1.15.0
--sqlparse==0.3.1
--toml==0.10.1
--wrapt==1.12.1
+- asgiref==3.2.10
+- astroid==2.4.2
+- colorama==0.4.3
+- Django==3.0.8
+- django-cors-headers==3.4.0
+- djangorestframework==3.11.0
+- isort==4.3.21
+- lazy-object-proxy==1.4.3
+- mccabe==0.6.1
+- pylint==2.5.3
+- pylint-django==2.1.0
+- pylint-plugin-utils==0.6
+- pytz==2020.1
+- six==1.15.0
+- sqlparse==0.3.1
+- toml==0.10.1
+- wrapt==1.12.1
 
