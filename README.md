@@ -36,16 +36,16 @@ urlpatterns = [
     path('reports/new', views.new_report, name='create_report'),
 ]
 ```
-#### admin/
+#### 1.1) admin/
 Nesta rota é possível utilizar o admin manager padrão do Django. Apenas um único superuser tem acesso a essa funcionalidade
 
-#### users/
+#### 1.2) users/
 Listagem de todos os usuários da aplicação. Apenas para usuários autenticados. **Vale lembrar que a API exige que todas as request sejam feitas com um header de "Authentication".**
 
-#### users/<int:pk>
+#### 1.3) users/<int:pk>
 Retorna apenas o user com id===pk (route param).
 
-#### users/register
+#### 1.4) users/register
 Cadastro de um novo usuário, sendo necessário a passagem do seguinte body request:
 ```js
 {
@@ -55,7 +55,7 @@ Cadastro de um novo usuário, sendo necessário a passagem do seguinte body requ
     "password2": "confirmar password"
 }
 ```
-#### api-token-auth/
+#### 1.5) api-token-auth/
 Autenticação de usuário. Aqui o usuário fará login, enviando um POST com o seguinte body request:
 ```js
 {
@@ -78,13 +78,13 @@ Este hash deverá ser inserido dentro do header de cada requisição, da seguint
         }
 }
 ```
-#### reports/
+#### 1.6) reports/
 Retorna da lista de Reports
 
-#### reports/<int:pk>
+#### 1.7) reports/<int:pk>
 Retorna apenas o report de id === pk
 
-#### reports/new
+#### 1.8) reports/new
 Cria um novo report, que requer a adição do seguinte body request:
 ```js
 {
@@ -108,15 +108,59 @@ class Report(models.Model):
     archived        = models.BooleanField(default=False)
 ```
 
+### 1.9) Instalação da aplicação:
+
+Para instalar a aplicação, inicialmente você deve ativar a virtualenv do projeto, acessando a pasta 'venv':
+```
+.\Scripts\activate
+```
+Posteriormente, rode o seguinte comando:
+```
+python manage.py runserver
+```
 
 ### 2) Front-end:
 
-O
+O front-end da aplicação foi feito todo em ReactJS, no molde de uma SPA e com responsividade de CSS
+```
+display: flex;
+```
+#### 2.1) Componentes:
+
+##### 2.1.2) Header:
+Exposição da marca da empresa, o hash de autenticação do usuário (quando logado), link para login/logout e link para os Reports
+
+##### 2.1.3) Footer:
+Exposição da marca, endereço e redes sociais com links reais.
+
+#### 2.2) Pages:
+Home e Reports, conforme explicado no header da aplicação.
 
 ## :computer: Tecnologias empregadas:
-- [Express](https://expressjs.com/);
-- [Uuidv4 - gerador de hash aleatória](https://www.npmjs.com/package/uuidv4);
-- [Node](https://nodejs.org/en/);
-- [Nodemon](https://nodemon.io/);
+
+Front-end:
+- [Axios](https://github.com/axios/axios);
+- [React](https://pt-br.reactjs.org/);
+- [React Dom](https://reactjs.org/docs/react-dom.html);
+- [React Icons](https://github.com/react-icons/react-icons);
 - [TypeScript](https://www.typescriptlang.org/);
+
+Back-end:
+-asgiref==3.2.10
+-astroid==2.4.2
+-colorama==0.4.3
+-Django==3.0.8
+-django-cors-headers==3.4.0
+-djangorestframework==3.11.0
+-isort==4.3.21
+-lazy-object-proxy==1.4.3
+-mccabe==0.6.1
+-pylint==2.5.3
+-pylint-django==2.1.0
+-pylint-plugin-utils==0.6
+-pytz==2020.1
+-six==1.15.0
+-sqlparse==0.3.1
+-toml==0.10.1
+-wrapt==1.12.1
 
