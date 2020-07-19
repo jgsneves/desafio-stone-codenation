@@ -125,6 +125,11 @@ O front-end da aplicação foi feito todo em ReactJS, no molde de uma SPA e com 
 ```
 display: flex;
 ```
+
+<h1 align=center>
+<img width="400" src="https://github.com/jgsneves/desafioStoneCodenation/blob/master/2020-07-19-19-54-30.gif" />
+</h1>
+
 #### 2.1) Componentes:
 
 ##### 2.1.2) Header:
