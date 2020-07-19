@@ -1,0 +1,61 @@
+.superContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.pageTitle {
+    font-size: 60px;
+    margin: 30px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reportContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    min-width: 600px;
+    border-radius: 6px;
+    background-color: darkgray;
+    padding: 20px;
+    margin: 10px;
+}
+
+.username {
+    font-size: 40px;
+    padding: 10px;
+}
+
+.title {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.datetime {
+    align-items: center;
+}
+
+.type_of {
+    color: red;
+    justify-content: center;
+    align-items: center;
+}
+
+.details {
+    padding: 10px;
+}
+
+@media(max-width: 900px) {
+    .reportContainer {
+        max-width: 300px;
+        min-width: 300px;
+    }
+    .top {
+        display: none;
+    }
+}

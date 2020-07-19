@@ -1,0 +1,26 @@
+
+.footerContainer {
+    background-color: #2d3844;
+    padding: 20px;
+}
+
+.topContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    color: #FFFFFF;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.logoContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-left: 10px;
+    margin-right: 10px;
+}
